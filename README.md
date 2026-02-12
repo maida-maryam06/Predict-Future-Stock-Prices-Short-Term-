@@ -134,7 +134,7 @@ Through this project I learned:
 * How to evaluate regression models properly
 *How scaling affects Linear Regression performance
 
-# Conclusion
+## Conclusion
 
 This project demonstrates that:
 - Even a simple Linear Regression model can perform well with proper feature engineering.
@@ -142,7 +142,7 @@ This project demonstrates that:
 - Careful preprocessing and time-series handling significantly improve model performance.
 - While stock markets are inherently unpredictable, machine learning can effectively model short-term trends when structured properly.
 
-# Technologies Used
+## Technologies Used
 * Python
 * Pandas
 * NumPy
