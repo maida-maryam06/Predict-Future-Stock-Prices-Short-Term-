@@ -62,7 +62,7 @@ Next day’s closing price
 
 This was created by shifting the Close column forward by one day.
 
-## Data Cleaning
+## 3. Data Cleaning
 Rows containing missing values (created due to lag and rolling calculations) were removed using:
 df.dropna()
 This ensures the model trains on clean and complete data.
@@ -84,7 +84,7 @@ Linear Regression performs better when features are on the same scale
 Stock volume values are much larger than price values
 Scaling ensures fair contribution from all features.
 
-## 3. Model Selection – Linear Regression
+## 4. Model Selection – Linear Regression
 
 A Linear Regression model was used because:
 * It is simple and interpretable
@@ -93,14 +93,14 @@ A Linear Regression model was used because:
 
 The model was trained using the training dataset and then evaluated on unseen test data.
 
-## 4. Model Evaluation
+## 5. Model Evaluation
 
 Three evaluation metrics were used:
 * R² Score: Measures how well the model explains variance in stock prices.
 * MAE (Mean Absolute Error): Average prediction error in dollars.
 * RMSE (Root Mean Squared Error): Penalizes larger prediction errors more heavily.
 
-## 5. Results
+## 6. Results
 ### Training Performance
 * R² = 0.9929
 * MAE = $2.03
@@ -117,7 +117,7 @@ Three evaluation metrics were used:
 - The small gap between training and testing results indicates minimal overfitting.
 - The model successfully captures short-term stock price trends.
 
-## 6. Visualization
+## 7. Visualization
 The project includes:
 * Historical closing price plot
 * Actual vs Predicted price comparison
@@ -125,7 +125,7 @@ The project includes:
 
 The predicted values closely follow the real stock trend.
 
-# Key Learnings
+## Key Learnings
 
 Through this project I learned:
 * How to handle time series financial data
